@@ -51,6 +51,12 @@
 
 	</dependencyManagement>
 
+	<!-- 子模块 -->
+	<modules>
+		<module>eureka</module>
+		<module>consumer</module>
+	</modules>
+
 	<build>
 		<plugins>
 			<plugin>
