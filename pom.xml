@@ -55,6 +55,10 @@
 	<modules>
 		<module>eureka</module>
 		<module>consumer</module>
+		<module>provider1</module>
+		<module>provider1-duplicate</module>
+		<module>provider2</module>
+		<module>provider2-duplicate</module>
 	</modules>
 
 	<build>
