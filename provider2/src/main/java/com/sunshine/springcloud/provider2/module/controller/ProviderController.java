@@ -10,7 +10,7 @@ public class ProviderController {
     @RequestMapping(value = "provider2" , method = RequestMethod.GET)
     public String provider(String param) throws InterruptedException {
         System.out.println(requestCount++);
-//        Thread.sleep(3000);
+        Thread.sleep(3000);
         String result = "当前服务为provider2 --- 入参为 --- "+param+" --- 调用次数为 --- "+ ProviderController.requestCount ;
         return result ;
     }

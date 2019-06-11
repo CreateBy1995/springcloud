@@ -11,7 +11,12 @@ public class ProviderController {
     public String provider(String param) throws InterruptedException {
         System.out.println(requestCount++);
         String result = "当前服务为provider1duplicate --- 入参为 --- "+param+" --- 调用次数为 --- "+ ProviderController.requestCount ;
-//        Thread.sleep(3000);
+        Thread.sleep(3000);
         return result ;
+    }
+    @RequestMapping(value = "testZuul/test" , method = RequestMethod.GET)
+    public String testZuul(){
+        System.out.println(requestCount++);
+        return "testZuul_test" ;
     }
 }

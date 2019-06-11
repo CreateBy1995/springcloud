@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients
-//@EnableCircuitBreaker
+@EnableCircuitBreaker
 public class ConsumerApplication {
 
 	public static void main(String[] args) {
