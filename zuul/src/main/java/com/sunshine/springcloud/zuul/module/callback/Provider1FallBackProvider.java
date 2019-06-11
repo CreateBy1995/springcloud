@@ -16,6 +16,7 @@ import java.io.InputStream;
 public class Provider1FallBackProvider implements FallbackProvider {
     @Override
     public String getRoute() {
+        // return的值为对应的serviceId   *或null 则表示该fallback为所有zuul的默认fallback
         return "PROVIDER1";
     }
 
