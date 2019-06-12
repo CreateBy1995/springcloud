@@ -20,13 +20,13 @@ public class CustomPreFilter extends ZuulFilter {
     public int filterOrder() {
         // 同类型的过滤器可能有多个  所以必须要指定执行顺序
         // 数字越小表示顺序越高，越先执行
-        return FilterConstants.PRE_DECORATION_FILTER_ORDER;
+        return 1 ; //FilterConstants.PRE_DECORATION_FILTER_ORDER;
     }
 
     @Override
     public boolean shouldFilter() {
         //表示是否需要执行该filter，true表示执行，false表示不执行
-        return false;
+        return true;
     }
 
     @Override
