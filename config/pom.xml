@@ -9,42 +9,24 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-
 	<groupId>com.sunshine.springcloud</groupId>
-	<artifactId>provider1</artifactId>
+	<artifactId>config</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>provider1</name>
+	<name>config</name>
 	<description>Demo project for Spring Boot</description>
 
 
 	<dependencies>
-		<!-- SpringCloud config客户端 -->
+		<!-- SpringCloud config服务端 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
+			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<!-- Eureka 客户端 -->
+		<!-- Eureka 客户端  将配置中心服务化 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
 		</dependency>
 
 		<dependency>
@@ -53,6 +35,13 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
 	</dependencies>
+
 
 </project>
